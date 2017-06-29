@@ -21,7 +21,7 @@ public class QueueView extends JFrame {
 
     public QueueView(QueueController controller){
         this.controller = controller;
-        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         this.setContentPane(mainPanel);
         this.setBounds(100,100,1000,500);
         this.setVisible(true);

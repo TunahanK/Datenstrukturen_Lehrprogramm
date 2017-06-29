@@ -15,7 +15,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="Hier eine Zahl zum einschlangen eingeben"/>
+          <text value="Hier eine Zahl zum Einschlangen eingeben"/>
           <toolTipText value=""/>
         </properties>
       </component>

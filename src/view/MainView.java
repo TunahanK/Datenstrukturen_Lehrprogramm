@@ -2,6 +2,7 @@ package view;
 
 import control.ArrayController;
 import control.QueueController;
+import control.StackController;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -46,7 +47,7 @@ public class MainView extends JFrame{
         stackButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                StackView stackview = new StackView(new StackController());
             }
         });
         listButton.addActionListener(new ActionListener() {
