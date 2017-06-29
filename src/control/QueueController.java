@@ -13,14 +13,16 @@ public class QueueController {
      * @return size : Die länge der Queue
      */
     public int getSize(){
-        Queue<Integer> temp = new Queue<>();
         int size = 0;
-        while(!queue.isEmpty()){
-            temp.enqueue(queue.front());
-            queue.dequeue();
-            size++;
+        if(!queue.isEmpty()){
+            Queue<Integer> temp = new Queue<>();
+            while(!queue.isEmpty()){
+                temp.enqueue(queue.front());
+                queue.dequeue();
+                size++;
+            }
+            queue = temp;
         }
-        queue = temp;
         return size;
     }
 

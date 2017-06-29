@@ -32,14 +32,22 @@ public class QueueView extends JFrame {
         enqueueButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Queue<Integer> queue = controller.getQueue();
-                queue.enqueue(Integer.parseInt(intField.getSelectedText()));
-                queueArea.append(String.valueOf(queue.front()));
+                try {
+                    int newInt = Integer.parseInt(intField.getText());
+                    Queue<Integer> queue = controller.getQueue();
+                    queue.enqueue(newInt);
+                    queueArea.append(String.valueOf(intField.getText()));
+                    everythingPane.setText("Neue Zahlen die hinzugefügt werden, werden hinten drangehängt");
+                }catch(NumberFormatException exception){
+                    intField.setText("Bitte eine Zahl eingeben");
+                }
             }
         });
         dequeueButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                queueArea.setText("");
+                everythingPane.setText("Beim dequeuen wird das vorderste Objekt entfernt");
                 Queue<Integer> queue = controller.getQueue();
                 queue.dequeue();
                 Queue<Integer> temp = new Queue<>();

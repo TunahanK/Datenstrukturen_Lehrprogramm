@@ -26,7 +26,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value=""/>
+          <text value="Queues sind Warteschlangen, wie man Sie aus dem echten Leben kennt. Sie funktioniert nach dem First in - First out Prinzip. Heißt: Wer zuerst kommt, geht auch als erstes. Im Gegensatz zum Array sind diese dynamisch. Das heißt, dass eine Queue theoretisch unendlich lang sein kann bzw. bist der Speicher voll ist."/>
         </properties>
       </component>
       <component id="da1b" class="javax.swing.JTextArea" binding="queueArea">
