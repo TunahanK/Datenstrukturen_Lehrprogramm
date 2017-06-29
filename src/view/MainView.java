@@ -1,6 +1,7 @@
 package view;
 
 import control.ArrayController;
+import control.ListController;
 import control.QueueController;
 import control.StackController;
 
@@ -53,7 +54,7 @@ public class MainView extends JFrame{
         listButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                ListView listview = new ListView(new ListController());
             }
         });
         treeButton.addActionListener(new ActionListener() {

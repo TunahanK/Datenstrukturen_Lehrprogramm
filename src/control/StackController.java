@@ -9,7 +9,7 @@ public class StackController {
     private Stack<Integer> stack = new Stack<>();
 
     /**
-     * Die länge des Stacks wird mithilfe eines Hilfsstacks ermittelt
+     * Die Länge des Stacks wird mithilfe eines Hilfsstacks ermittelt
      * @return size : Die länge der Stack
      */
     public int getSize(){

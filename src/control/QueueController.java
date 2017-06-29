@@ -9,7 +9,7 @@ public class QueueController {
     private Queue<Integer> queue = new Queue<>();
 
     /**
-     * Die länge der Queue wird mithilfe eienr Hilfsqueue ermittelt
+     * Die Länge der Queue wird mithilfe eienr Hilfsqueue ermittelt
      * @return size : Die länge der Queue
      */
     public int getSize(){
