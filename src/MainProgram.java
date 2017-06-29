@@ -1,4 +1,3 @@
-import control.MainController;
 import view.MainView;
 
 /**
@@ -7,6 +6,6 @@ import view.MainView;
 public class MainProgram {
 
     public static void main(String[] args) {
-        MainView view = new MainView(new MainController());
+        MainView view = new MainView();
     }
 }

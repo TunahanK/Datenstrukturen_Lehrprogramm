@@ -1,7 +1,7 @@
 package view;
 
 import control.ArrayController;
-import control.MainController;
+import control.QueueController;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -20,10 +20,8 @@ public class MainView extends JFrame{
     private JButton treeButton;
     private JButton graphButton;
     private JLabel chooseText;
-    private MainController controller;
 
-    public MainView(MainController controller){
-        this.controller = controller;
+    public MainView(){
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setContentPane(mainPanel);
         this.pack();
@@ -42,7 +40,7 @@ public class MainView extends JFrame{
         queueButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                QueueView queueView = new QueueView(new QueueController());
             }
         });
         stackButton.addActionListener(new ActionListener() {
