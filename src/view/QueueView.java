@@ -37,7 +37,7 @@ public class QueueView extends JFrame {
                     Queue<Integer> queue = controller.getQueue();
                     queue.enqueue(newInt);
                     queueArea.append(String.valueOf(intField.getText()));
-                    everythingPane.setText("Neue Zahlen die hinzugefügt werden, werden hinten drangehängt");
+                    everythingPane.setText("Neue Zahlen die hinzugefügt werden, werden hinten drangehängt.");
                 }catch(NumberFormatException exception){
                     intField.setText("Bitte eine Zahl eingeben");
                 }
@@ -47,7 +47,7 @@ public class QueueView extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 queueArea.setText("");
-                everythingPane.setText("Beim dequeuen wird das vorderste Objekt entfernt");
+                everythingPane.setText("Beim dequeuen wird das vorderste Objekt entfernt.");
                 Queue<Integer> queue = controller.getQueue();
                 queue.dequeue();
                 Queue<Integer> temp = new Queue<>();
